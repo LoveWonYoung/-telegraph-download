@@ -114,7 +114,8 @@ func main() {
 
 	var s string
 	fmt.Println("输入链接：")
-	fmt.Scanln(&s)
+	_, _ = fmt.Scanln(&s)
+
 	r, f := urlList(s)
 	var wg sync.WaitGroup
 
